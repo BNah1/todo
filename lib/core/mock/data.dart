@@ -16,7 +16,7 @@ class MockData{
     TaskModel(
       "Design Homepage",
       DateTime(2025, 7, 10),
-      [listUserMock[0], listUserMock[1]], // Alice + Bob
+      [listUserMock[0], listUserMock[1], listUserMock[2]], // Alice + Bob
       listUserMock[2], // Diana tạo
       ["Sketch layout", "Create prototype"],
       "Design the homepage for the new project.",
@@ -24,7 +24,7 @@ class MockData{
       "p001",
     ),
     TaskModel(
-      "Build Login Page",
+      "Build Login Page asdsad as das as das sd",
       DateTime(2025, 7, 11),
       [listUserMock[0]], // Alice
       listUserMock[3], // Urgot

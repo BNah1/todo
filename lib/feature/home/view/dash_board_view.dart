@@ -11,29 +11,29 @@ class DashBoardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: AppSize.paddingDashBoard, horizontal: AppSize.paddingDashBoard),
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 60,
-            ),
-            const ProfileDashBoard(),
-            const SizedBox(
-              height: 30,
-            ),
-            containTile(
-                'Your project',
-                const SizedBox(height: 200, child: ListProjectWidget()),
-                'See all',
-                    () {}),
-            const SizedBox(height: 30,),
-            containTile(
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 60,
+          ),
+          const ProfileDashBoard(),
+          const SizedBox(
+            height: 30,
+          ),
+          containTile(
+              'Your project',
+              const SizedBox(height: 200, child: ListProjectWidget()),
+              'See all',
+                  () {}),
+          const SizedBox(height: 30,),
+          Expanded(
+            child: containTile(
                 'Your tasks',
-                const SizedBox(height: 350, child: ListTaskWidget()),
+                Expanded(child: ListTaskWidget()),
                 'Add tasks',
                 () {}),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

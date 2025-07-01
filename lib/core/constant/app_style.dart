@@ -16,5 +16,8 @@ class AppTextStyle{
 
 
   static TextStyle textBodyTile = const TextStyle(fontSize: 22);
+  static TextStyle textSubBody = const TextStyle(fontSize: 14,color: Colors.grey);
   static TextStyle textHint = const TextStyle(fontSize: 20,color: Colors.grey);
+
+
 }

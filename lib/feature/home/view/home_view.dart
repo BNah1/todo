@@ -60,8 +60,9 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin{
 
   final Widget _buttonAdd = Center(
     child: Container(
-      height: 70,
-      width: 70,
+      padding: const EdgeInsets.all(5),
+      height: 65,
+      width: 65,
       decoration: BoxDecoration(
         color: Colors.blueAccent,
         borderRadius: BorderRadius.circular(50),
@@ -78,7 +79,8 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin{
           '+',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 50,
+            fontWeight: FontWeight.normal,
+            decoration: TextDecoration.none,
           ),
         ),
       ),

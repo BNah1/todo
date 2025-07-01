@@ -22,7 +22,8 @@ class ListTaskWidget extends StatelessWidget {
             list = snapshot.data!;
           }
           return ListView.builder(
-            scrollDirection: Axis.vertical,
+              padding: EdgeInsets.zero,
+              scrollDirection: Axis.vertical,
               itemCount: list.length,
               itemBuilder: (context, index){
             return TaskTile(task: list[index],);
